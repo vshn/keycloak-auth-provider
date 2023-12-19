@@ -6,7 +6,7 @@ spec:
   containers:
     initContainers:
       auth-provider:
-        image: quay.io/vshn/keycloak-auth-provider:latest
+        image: ghcr.io/vshn/keycloak-auth-provider:latest
         imagePullPolicy: IfNotPresent
         command:
           - sh

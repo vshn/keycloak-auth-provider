@@ -10,7 +10,7 @@ MAKEFLAGS += --no-builtin-variables
 
 
 IMG_TAG ?= latest
-QUAY_IMG ?= quay.io/vshn/keycloak-auth-provider:$(IMG_TAG)
+IMG_NAME ?= ghcr.io/vshn/keycloak-auth-provider:$(IMG_TAG)
 
 
 .PHONY: help
@@ -27,4 +27,4 @@ build: build.docker ## All-in-one build target
 
 .PHONY: build.docker
 build.docker: ## Build the docker image
-	docker build -t $(QUAY_IMG) .
+	docker build -t $(IMG_NAME) .
