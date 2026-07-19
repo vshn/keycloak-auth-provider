@@ -1,7 +1,7 @@
 FROM docker.io/library/alpine:latest
 
 # renovate: datasource=github-releases depName=sventorben/keycloak-restrict-client-auth
-ARG KEYCLOAK_RESTRICT_CLIENT_AUTH_VERSION=v24.0.0
+ARG KEYCLOAK_RESTRICT_CLIENT_AUTH_VERSION=v26.1.1
 
 RUN \
   mkdir /auth-providers &&\
